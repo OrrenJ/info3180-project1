@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main %}
+  	<h1>{{ user.username }}</h1>
+  	<button id="get-json" class="btn btn-primary">Get JSON (check console)</button>
+  	<ul class="user-profile-list">
+  		<div class="user-profile">
+  			<img class='profile-pic' src="{{ url_for('static', filename='profile_pic/'+user.username+'.png') }}" />
+  			<div class='user-profile-info'>
+  				<h2>{{ user.firstname }} {{ user.lastname }}</h2>
+  				<div class='created-on-div'><label>Profile Created On:</label> {{ user.created_on}}</div>
+
+  				<div class='user-profile-info-div'><label>Username:</label> {{ user.username }}</div>
+  				<div class='user-profile-info-div'><label>User ID:</label> {{ user.userid }}</div>
+  				<div class='user-profile-info-div'><label>Gender:</label> {{ user.gender }}</div>
+  				<div class='user-profile-info-div'><label>Age:</label> {{ user.age }}</div>
+
+  				<p class="biography-div">{{ user.biography }}</p>
+  			</div>
+		</div>
+  	</ul>
+{% endblock %}

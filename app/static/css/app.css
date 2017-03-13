@@ -1,0 +1,50 @@
+body {
+    padding-top: 50px;
+}
+
+.form-control {
+	float: right;
+	width: 75%;
+}
+
+.user-profile {
+	background-color: #6699ff;
+	border: 1px solid lightgrey;
+	border-radius: 8px;
+	padding: 8px;
+	margin: 12px;
+}
+
+.profile-pic {
+	width: 256px;
+	margin-top: 0;
+	display: inline-block;
+}
+
+.user-profile-info {
+	display: inline-block;
+	vertical-align: top;
+	padding: 4px;
+}
+
+.user-profile h2 {
+	margin: 0;
+}
+
+.created-on-div {
+	margin-bottom: 8px;
+}
+
+.user-profile-info-div, .user-profile-info-div label {
+	margin: 0;
+	padding: 0;
+}
+
+.biography-div {
+	padding-top: 12px;
+}
+
+.no-highlight, .no-highlight:hover {
+	color: inherit;
+	text-decoration: none;
+}
